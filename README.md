@@ -14,9 +14,7 @@ Scribble uses `github.com/dlclark/regexp2` for its text matching, since Go's cor
 and other useful features.
 
 ### Sample Usage
-~~~
-
-~~~
+Check the `./test` directory for tokenizer and parser state machine usage examples.
 
 ### Caveats
 Scribble is a port of a small C# library that has been previously used in production to define and parse SQL-like query 
