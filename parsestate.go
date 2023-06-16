@@ -1,7 +1,7 @@
 package scribble
 
 type ParseState struct {
-	CurrentState string
-	Trigger      string
-	NextState    string
+	State   string
+	Token   string
+	Literal string
 }

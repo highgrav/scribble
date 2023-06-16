@@ -1,8 +1,8 @@
 # Scribble
-### A tiny DSL parser library
+## A tiny DSL parser library
 
-Scribble is a trivial framework for quickly defining languages. It deliberately trades performance for simplicity, making 
-it easy to add small DSLs to your application.
+Scribble is a trivial framework for quickly defining languages, with a focus on lexing and state machine parsing,. It 
+deliberately trades performance for simplicity, making it easy to add small DSLs to your application.
 
 ### Overview
 Scribble consists of `Tokenizer`, which lets you define your lexical tokens using regular expressions; and `StateMachine`, 
@@ -12,6 +12,11 @@ which you can then feed to `StateMachine`'s `NextState(...)` function to get the
 
 Scribble uses `github.com/dlclark/regexp2` for its text matching, since Go's core `regexp` doesn't allow for backtracking 
 and other useful features.
+
+### Sample Usage
+~~~
+
+~~~
 
 ### Caveats
 Scribble is a port of a small C# library that has been previously used in production to define and parse SQL-like query 

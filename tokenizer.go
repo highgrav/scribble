@@ -76,7 +76,6 @@ func (tok *Tokenizer) Tokenize(stream string) ([]Token, error) {
 			tokens = append(tokens, Token{
 				Name:    name,
 				Literal: Substring(stream, loc, lookahead),
-				State:   "",
 			})
 			loc = loc + lookahead
 			break
